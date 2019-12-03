@@ -16,6 +16,7 @@ namespace SCPCB
         public static Database database = new Database(Application.persistentDataPath, DatabaseMode.OnDemand);
         public static GameInfo CurrentGame = new GameInfo();
         public static int TargetScene = 2;
+        public static Dictionary<string, GameObject> Rooms = new Dictionary<string, GameObject>();
 
         /////////////////////
         //In-Game Variables//
@@ -26,6 +27,7 @@ namespace SCPCB
         public bool isWarheadClosed = false;
         public Dictionary<string, Storage> Storages = new Dictionary<string, Storage>();
         public SCPMainCameraController mainCharacher;
+        public Dictionary<Point2DD, GameObject> MainMap = new Dictionary<Point2DD, GameObject>();
     }
 
     [Serializable]

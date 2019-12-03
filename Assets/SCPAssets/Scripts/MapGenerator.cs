@@ -25,8 +25,12 @@ namespace SCPCB
                 }
             }
         }
-
-
     }
-
+    [System.Serializable]
+    public class MapNode
+    {
+        public Point2DD location;
+        public bool isUsedByOtherRoom;
+        public GameObject room;
+    }
 }
