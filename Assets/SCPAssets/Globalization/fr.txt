@@ -1,0 +1,25 @@
+﻿français by Google Translate
+0000=Nouveau jeu
+0001=Chargement du jeu
+0002=Les options
+0003=Sortir
+
+0004=Retour
+0005=Vidéo
+0006=CONTROL
+0007=QUALTIY
+
+0008=Post-traitement
+
+0009=Très lent
+0010=Faible
+0011=Moyen
+0012=HIGH
+0013=VERY HIGH
+0014=ULTRA
+
+0015=CONTAINMENT BEACH UNITY REMAKE
+
+1000=This site is experiencing multiple Keter and Euclid containments beach, full site lockdown initialized.
+1001=Attention, all personnel report to [DATA DAMAGED] immediately.
+1002=Due to emergency situation, the Alpha warhead detonation sequence engaged, the underground part of the facility will be detonated in 110 seconds.

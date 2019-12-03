@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/SCPAssets/Scenes/Splash.unity
+    guid: d6cd0992d2dc43d46ada518a1558b19b
+  - enabled: 1
+    path: Assets/SCPAssets/Scenes/MainMenu.unity
+    guid: 42f94f47b34d46d4e934ed0b09b06077
+  - enabled: 1
+    path: Assets/SCPAssets/Scenes/Loading.unity
+    guid: 1df7492176c91764d81900db16c895be
+  - enabled: 1
+    path: Assets/SCPAssets/Scenes/Test.unity
+    guid: 1820c9b5dc2884e4193f4aba21054773
+  m_configObjects: {}
