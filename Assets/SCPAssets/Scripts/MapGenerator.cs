@@ -13,6 +13,7 @@ namespace SCPCB
         void Start()
         {
             var rooms = transform.GetComponentsInChildren<FacilityRoomDefinition>();
+
             foreach (var item in rooms)
             {
                 var lights = item.pointsOfLight;
@@ -26,11 +27,19 @@ namespace SCPCB
             }
         }
     }
+    public enum RoomRotation
+    {
+        Zero=0,
+        Ninty=1,
+        UpsideDown=2,
+        Ninty_UpsideDown=3,
+    }
     [System.Serializable]
     public class MapNode
     {
         public Point2DD location;
+        public RoomRotation rotation;
         public bool isUsedByOtherRoom;
-        public GameObject room;
+        public FacilityRoomDefinition room;
     }
 }

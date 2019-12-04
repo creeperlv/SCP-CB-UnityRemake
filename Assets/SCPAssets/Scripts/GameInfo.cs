@@ -27,7 +27,7 @@ namespace SCPCB
         public bool isWarheadClosed = false;
         public Dictionary<string, Storage> Storages = new Dictionary<string, Storage>();
         public SCPMainCameraController mainCharacher;
-        public Dictionary<Point2DD, GameObject> MainMap = new Dictionary<Point2DD, GameObject>();
+        public Dictionary<Point2DD, MapNode> MainMap = new Dictionary<Point2DD, MapNode>();
     }
 
     [Serializable]
