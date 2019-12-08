@@ -7,6 +7,7 @@ namespace SCPCB.Map
 
     public class FacilityRoomDefinition : MonoBehaviour
     {
+        public List<Point2DD> TakeUpRooms;
         public List<FacilityRoomDefinition> AttachedRooms;
         public List<DoorDescription> pointsOfDoor;
         public List<LightDescription> pointsOfLight;

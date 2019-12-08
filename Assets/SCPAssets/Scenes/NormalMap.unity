@@ -14112,7 +14112,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1961181718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.32, y: -5.49, z: 8.61}
+  m_LocalPosition: {x: 14.32, y: -5.49, z: 28.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 485645809}
@@ -14134,6 +14134,7 @@ MonoBehaviour:
   LightContainer: {fileID: 449308606}
   LightPerfab: {fileID: 2031605183933310557, guid: 91e039e3c250b484496b778460484402,
     type: 3}
+  DebugRandomSeed: 
 --- !u!1 &2028185800
 GameObject:
   m_ObjectHideFlags: 0
@@ -38660,7 +38661,7 @@ PrefabInstance:
     - target: {fileID: 2067077004630169775, guid: 540d40542a44ebc48b9e38e3e447e2c2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.19
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2067077004630169775, guid: 540d40542a44ebc48b9e38e3e447e2c2,
         type: 3}
@@ -38670,7 +38671,7 @@ PrefabInstance:
     - target: {fileID: 2067077004630169775, guid: 540d40542a44ebc48b9e38e3e447e2c2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2067077004630169775, guid: 540d40542a44ebc48b9e38e3e447e2c2,
         type: 3}

@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using SCPCB.Map;
+using SCPCB.Utilities;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 namespace SCPCB
@@ -10,10 +12,13 @@ namespace SCPCB
         //Currently only generates lights.
         public GameObject LightContainer;
         public GameObject LightPerfab;
+        public string DebugRandomSeed;
         void Start()
         {
+            if(Application.isEditor)
+            CBRandom.SetSeed(DebugRandomSeed);
             var rooms = transform.GetComponentsInChildren<FacilityRoomDefinition>();
-
+            System.Random random = new System.Random();
             foreach (var item in rooms)
             {
                 var lights = item.pointsOfLight;
@@ -24,6 +29,12 @@ namespace SCPCB
                     a.GetComponent<Light>().range = light.Range;
                     a.GetComponent<Light>().intensity= light.Intensity;
                 }
+            }
+            int MAX_SIZE = 50;
+            for (int i = 0; i < MAX_SIZE; i++)
+            {
+                int RoomID = CBRandom.NextInt(0, GameInfo.Rooms.Count);
+
             }
         }
     }
