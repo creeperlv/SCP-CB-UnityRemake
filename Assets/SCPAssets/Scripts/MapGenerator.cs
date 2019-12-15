@@ -2,6 +2,7 @@
 using SCPCB.Utilities;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 namespace SCPCB
 {
@@ -17,8 +18,28 @@ namespace SCPCB
         {
             if(Application.isEditor)
             CBRandom.SetSeed(DebugRandomSeed);
+            {
+                int MAX_ROOMS = CBRandom.NextInt(20, 50);
+
+                for (int i = 0; i < MAX_ROOMS; i++)
+                {
+                    {
+                        int id=CBRandom.NextInt(0, GameInfo.Rooms.Count);
+                        if (i == 0)
+                        {
+                            Point2DD p = new Point2DD();
+                            p.X = 25;
+                            p.Y = 25;
+                            GameInfo.CurrentGame.MainMap.Add(p, new MapNode() { room = GameInfo.Rooms.ElementAt(id).Value.GetComponent<FacilityRoomDefinition>(), rotation= RoomRotation.Zero });
+                        }
+                        else
+                        {
+
+                        }
+                    }
+                }
+            }
             var rooms = transform.GetComponentsInChildren<FacilityRoomDefinition>();
-            System.Random random = new System.Random();
             foreach (var item in rooms)
             {
                 var lights = item.pointsOfLight;
