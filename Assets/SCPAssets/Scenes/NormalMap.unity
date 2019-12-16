@@ -350,6 +350,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CompleteDoor1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1781723251993007849, guid: 1b100c8bc4e56c447a0a343497a6e791,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6822407044949812992, guid: 1b100c8bc4e56c447a0a343497a6e791,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14112,7 +14117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1961181718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.32, y: -5.49, z: 28.33}
+  m_LocalPosition: {x: 14.49, y: -5.49, z: 28.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 485645809}
@@ -14201,7 +14206,7 @@ MonoBehaviour:
     Room: {fileID: 349496910439831992, guid: d4ac3779302eb6543a17fb47022ba64f, type: 3}
   - ID: LC-Tunnel-2
     Room: {fileID: 5428059839496025778, guid: bcdfce8c8fdcf6b439e221d02132a8ec, type: 3}
-  isDebug: 0
+  isDebug: 1
 --- !u!1 &2034446064
 GameObject:
   m_ObjectHideFlags: 0
@@ -38238,6 +38243,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CompleteDoor1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781723251993007849, guid: 1b100c8bc4e56c447a0a343497a6e791,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6822407044949812992, guid: 1b100c8bc4e56c447a0a343497a6e791,
         type: 3}

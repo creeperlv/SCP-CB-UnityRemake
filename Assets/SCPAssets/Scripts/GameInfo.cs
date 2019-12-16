@@ -17,6 +17,7 @@ namespace SCPCB
         public static GameInfo CurrentGame = new GameInfo();
         public static int TargetScene = 2;
         public static Dictionary<string, GameObject> Rooms = new Dictionary<string, GameObject>();
+        public static string ConsoleText = "SCP - Containment Breach Unity Remake Console\r\nVersion:0.1.2.0";
 
         /////////////////////
         //In-Game Variables//

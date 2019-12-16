@@ -29,7 +29,7 @@ namespace SCPCB.Inventory
                 //Debug.Log(item.Value);
                 var p=item.Key;
                 int i = (p.X) + 4 *( p.Y);
-                Debug.Log(i);
+                //Debug.Log(i);
                 Fetched[i] = true;
                 Items[i].transform.GetChild(0).GetComponent<Image>().sprite = GameInfo.Items[item.Value].Icon;
             }

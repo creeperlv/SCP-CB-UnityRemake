@@ -11,11 +11,16 @@ namespace SCPCB.Map
         public List<FacilityRoomDefinition> AttachedRooms;
         public List<DoorDescription> pointsOfDoor;
         public List<LightDescription> pointsOfLight;
+        public enum DoorPosition
+        {
+            Forward,Backward,Right,Left
+        }
         [Serializable]
         public class DoorDescription
         {
             public bool isConnectDoor;
             public Transform point;
+            public DoorPosition Position;
             public DoorTypes DoorType;
             public float targetWidthScale = 1.0f;
             public float targetHeightScale = 1.05f;

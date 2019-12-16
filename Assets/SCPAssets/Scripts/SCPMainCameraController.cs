@@ -96,22 +96,22 @@ namespace SCPCB
                 {
                     if (isGodMode == false)
                     {
-                        ConsoleText.text += "\r\n<color=#2080E0>You are in godmode now.</color>";
+                        GameInfo.ConsoleText += "\r\n<color=#2080E0>You are in godmode now.</color>";
                         isGodMode = !isGodMode;
                     }
                     else
                     {
-                        ConsoleText.text += "\r\n<color=red>You are not in godmode now.</color>";
+                        GameInfo.ConsoleText += "\r\n<color=red>You are not in godmode now.</color>";
                         isGodMode = !isGodMode;
                     }
                 }
                 else if (s.ToUpper() == "CLS")
                 {
-                    ConsoleText.text = "SCP - Containment Breach Unity Remake Console\r\nVersion:0.1.2.0";
+                    GameInfo.ConsoleText = "SCP - Containment Breach Unity Remake Console\r\nVersion:0.1.2.0";
                 }
                 else if (s.ToUpper() == "SHUTDOWNNUKE")
                 {
-                    ConsoleText.text += "\r\n<color=green>Shuting down nuke...</color>";
+                    GameInfo.ConsoleText += "\r\n<color=green>Shuting down nuke...</color>";
                     GameInfo.CurrentGame.isWarheadClosed = true;
                 }
                 else if (s.ToUpper() == "EXIT")
@@ -284,6 +284,10 @@ namespace SCPCB
         // Update is called once per frame
         void Update()
         {
+            if(ConsoleText.text!= GameInfo.ConsoleText)
+            {
+                ConsoleText.text = GameInfo.ConsoleText;
+            }
             if (SubTime > 0)
             {
                 SubTime -= Time.deltaTime;

@@ -231,11 +231,13 @@ MonoBehaviour:
   pointsOfDoor:
   - isConnectDoor: 0
     point: {fileID: 8905057478649947267}
+    Position: 1
     DoorType: 0
     targetWidthScale: 0.9
     targetHeightScale: 0
   - isConnectDoor: 0
     point: {fileID: 3353716645576501701}
+    Position: 0
     DoorType: 0
     targetWidthScale: 0
     targetHeightScale: 0
